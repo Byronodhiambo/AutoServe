@@ -8,9 +8,9 @@ export default function Header() {
       <h3 className="companyName">AutoServe</h3>
 
       <ul className="nav-items">
-        <li>home</li>
-        <li>services</li>
-        <li>contacts</li>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Contacts</li>
       </ul>
     </nav>
   );

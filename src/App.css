@@ -41,6 +41,7 @@ body {
   padding: 0%;
   background-color: rgb(40, 46, 48);
   color: #ddd;
+  font-family: Inter, sans-serif;
 }
 .nav {
   display: flex;
@@ -53,6 +54,7 @@ body {
   padding: 14px 16px;
   display: inline;
   text-decoration: none;
+  font-weight: 900;
 }
 
 .logo {
@@ -61,6 +63,8 @@ body {
 .companyName {
   color: green;
   margin-right: auto;
+  font-weight: bolder;
+  font-size: 30px;
 }
 
 .nav-items li:hover {
@@ -70,10 +74,58 @@ body {
 
 .container {
   margin: 3%;
+  background-image: url(./images/AutoServecopy.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
 }
 
 .container li {
   margin: 2%;
+}
+.container li::marker {
+  color: green;
+  font-size: 30px;
+}
+
+.businessCard {
+  border-radius: 20px;
+  width: 350px;
+  background-color: rgb(26, 33, 36);
+}
+
+.businessContent {
+  padding: 20px;
+}
+.cardImage {
+  width: 100%;
+  border-radius: 20px;
+}
+.personalInfo {
+  text-align: center;
+}
+.personalInfo h6 {
+  color: green;
+}
+.info {
+  margin: 0%;
+}
+.personalInfo button {
+  margin: 10px;
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+.fa {
+  margin-right: 10px;
+}
+.bio {
+  font-size: 15px;
+  margin: 0%;
+}
+.socialHandles {
+  display: flexbox;
 }
 
 footer {
