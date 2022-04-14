@@ -10,8 +10,10 @@ function Page() {
   return (
     <>
       <Header />
-      <MainContent />
-      <ImageCatalog />
+      <div className="main-container">
+        <MainContent />
+        <ImageCatalog />
+      </div>
       <Footer />
     </>
   );

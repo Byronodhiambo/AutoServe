@@ -43,6 +43,9 @@ body {
   color: #ddd;
   font-family: Inter, sans-serif;
 }
+.main-container {
+  padding: 50px;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -154,60 +157,53 @@ footer {
   text-align: center;
 }
 
+.service {
+  padding: 50px;
+}
+
 .image-container {
-  padding: 100px;
+  /* padding: 0px 0px 10px 100px; */
   display: flex;
-  justify-content: space-around;
-  height: 700px;
+  align-items: center;
+  padding: 50px;
+}
+.image-container div {
+  background-size: 100% 100%;
+  border-radius: 20px;
+  margin: 10px 10px 0px 0px;
 }
 .image1 {
   background-image: url("./images/shok-absober.jpg");
-  background-size: 100% 100%;
-  border-radius: 20px;
-  width: 350px;
-  height: 500px;
+  width: 250px;
+  height: 300px;
 }
+
 .image2 {
-  width: 350px;
-  height: 500px;
-}
-.inner1 {
   background-image: url("./images/ball-bearing.jpg");
-  background-size: 100% 100%;
-  border-radius: 20px;
-  width: 350px;
-  height: 300px;
+  width: 250px;
+  height: 200px;
 }
 
-.inner2 {
+.image3 {
   background-image: url("./images/ball-joint.jpg");
-  background-size: 100% 100%;
-  margin-top: 20px;
-  border-radius: 20px;
-  width: 350px;
-  height: 350px;
+  margin-top: 30px;
+  width: 250px;
+  height: 250px;
 }
-.inner3 {
+.image4 {
   background-image: url("./images/oil-filter.jpg");
-  background-size: 100% 100%;
-  border-radius: 20px;
-  width: 300px;
+  width: 280px;
   height: 300px;
 }
-.inner3 {
-  background-image: url("./images/arm-bush.jpg");
-  background-size: 100% 100%;
-  border-radius: 20px;
-  width: 350px;
-  height: 400px;
-}
 
-.inner4 {
+.image5 {
   background-image: url("./images/wheel-bearing.jpg");
-  background-size: 100% 100%;
-  border-radius: 20px;
-  width: 350px;
-  height: 300px;
-
-  margin-top: 20px;
+  width: 280px;
+  height: 200px;
+  margin-top: 30px;
+}
+.image6 {
+  background-image: url("./images/arm-bush.jpg");
+  width: 380px;
+  height: 400px;
 }
