@@ -148,7 +148,66 @@ body {
 .socialHandles .fa {
   padding: 20px;
 }
+
 footer {
   margin: 10%;
   text-align: center;
+}
+
+.image-container {
+  padding: 100px;
+  display: flex;
+  justify-content: space-around;
+  height: 700px;
+}
+.image1 {
+  background-image: url("./images/shok-absober.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  width: 350px;
+  height: 500px;
+}
+.image2 {
+  width: 350px;
+  height: 500px;
+}
+.inner1 {
+  background-image: url("./images/ball-bearing.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  width: 350px;
+  height: 300px;
+}
+
+.inner2 {
+  background-image: url("./images/ball-joint.jpg");
+  background-size: 100% 100%;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 350px;
+  height: 350px;
+}
+.inner3 {
+  background-image: url("./images/oil-filter.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+}
+.inner3 {
+  background-image: url("./images/arm-bush.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  width: 350px;
+  height: 400px;
+}
+
+.inner4 {
+  background-image: url("./images/wheel-bearing.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  width: 350px;
+  height: 300px;
+
+  margin-top: 20px;
 }
