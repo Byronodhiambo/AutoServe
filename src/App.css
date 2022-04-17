@@ -207,3 +207,33 @@ footer {
   width: 380px;
   height: 400px;
 }
+
+.product-card {
+  width: 220px;
+}
+
+.prod-image {
+  width: 100%;
+  border-radius: 20px;
+}
+.prod-desc {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.prod-rating {
+  margin-left: 5px;
+}
+.prod-desc p {
+  margin: 4px;
+  font-size: 15px;
+}
+.bold {
+  font-weight: bolder;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+}

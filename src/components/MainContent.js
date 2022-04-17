@@ -3,6 +3,7 @@ import BussinesCard from "./BussinesCards";
 import fredrick from "../images/fredrick.jpeg";
 import girish from "../images/Girish.jpg";
 import mitesh from "../images/mitesh.jpg";
+import ImageCatalog from "./ImageCatalog";
 
 function MainContent() {
   return (
@@ -26,6 +27,7 @@ function MainContent() {
         <BussinesCard img={girish} name="Girish Karnad" designation="C E O" />
         <BussinesCard img={mitesh} name="Mitesh Patel" designation="Manager" />
       </div>
+      <ImageCatalog />
     </div>
   );
 }

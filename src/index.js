@@ -12,7 +12,6 @@ function Page() {
       <Header />
       <div className="main-container">
         <MainContent />
-        <ImageCatalog />
       </div>
       <Footer />
     </>
