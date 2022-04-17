@@ -1,13 +1,15 @@
 import React from "react";
 
-export default function BusinessCard(props) {
+// export default function BusinessCard(props) {
+export default function BusinessCard({ img, name, designation }) {
   return (
     <div className="card">
-      <img className="cardImage" src={props.img} />
+      {/* <img className="cardImage" src={props.img} /> */}
+      <img className="cardImage" src={img} />
       <div className="cardContent">
         <div className="personalInfo">
-          <h2 className="info">{props.name}</h2>
-          <h6 className="info">{props.designation}</h6>
+          <h2 className="info">{name}</h2>
+          <h6 className="info">{designation}</h6>
           <span className="info">
             <button>
               <i class="fa fa-envelope" aria-hidden="true"></i>Email
