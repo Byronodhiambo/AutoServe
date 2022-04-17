@@ -1,5 +1,9 @@
 import React from "react";
 import BussinesCard from "./BussinesCards";
+import fredrick from "../images/fredrick.jpeg";
+import girish from "../images/Girish.jpg";
+import mitesh from "../images/mitesh.jpg";
+
 function MainContent() {
   return (
     <div className="container">
@@ -13,7 +17,15 @@ function MainContent() {
       <br></br>
       <h2>Our employees</h2>
 
-      <BussinesCard />
+      <div className="employees">
+        <BussinesCard
+          img={fredrick}
+          name="Fredrick Maina"
+          designation="Accountant"
+        />
+        <BussinesCard img={girish} name="Girish Karnad" designation="C E O" />
+        <BussinesCard img={mitesh} name="Mitesh Patel" designation="Manager" />
+      </div>
     </div>
   );
 }
