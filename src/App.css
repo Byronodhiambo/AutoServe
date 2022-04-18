@@ -216,6 +216,14 @@ footer {
   width: 100%;
   border-radius: 20px;
 }
+.prod-catalog {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: inherit;
+  justify-content: space-between;
+}
 .prod-desc {
   align-items: center;
   display: inline-flex;

@@ -46,7 +46,13 @@ export default function ImageCatalog() {
       </div>
 
       <h1>Featured Parts</h1>
-      <FeaturedProducts />
+      <div className="prod-catalog">
+        <FeaturedProducts />
+        <FeaturedProducts />
+        <FeaturedProducts />
+        <FeaturedProducts />
+        <FeaturedProducts />
+      </div>
     </div>
   );
 }
