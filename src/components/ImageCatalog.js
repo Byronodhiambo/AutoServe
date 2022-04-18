@@ -1,5 +1,14 @@
 import React from "react";
 import FeaturedProducts from "./FeaturedProducts";
+import prodimage1 from "../images/REARRIGHTGASSHOCK.jpg";
+import prodimage2 from "../images/prodimage2.jpg";
+import prodimage3 from "../images/prodimage3.jpg";
+import prodimage4 from "../images/prodimage4.jpg";
+import prodimage5 from "../images/prodimage5.jpg";
+import prodimage6 from "../images/prodimage6.jpg";
+import prodimage7 from "../images/prodimage7.jpg";
+import prodimage8 from "../images/prodimage8.jpg";
+import prodimage9 from "../images/prodimage9.jpg";
 
 export default function ImageCatalog() {
   return (
@@ -47,11 +56,60 @@ export default function ImageCatalog() {
 
       <h1>Featured Parts</h1>
       <div className="prod-catalog">
-        <FeaturedProducts />
-        <FeaturedProducts />
-        <FeaturedProducts />
-        <FeaturedProducts />
-        <FeaturedProducts />
+        <FeaturedProducts
+          img={prodimage1}
+          rating="5.0 (6) . Kenya"
+          desc="The best quality Rear Right Gas Shock"
+          price="Kshs. 3,500"
+        />
+        <FeaturedProducts
+          img={prodimage2}
+          rating="4.0 (15) . Kenya"
+          desc="The best quality Air Filter"
+          price="Kshs. 4,500"
+        />
+        <FeaturedProducts
+          img={prodimage3}
+          rating="4.6 (2) . Kenya"
+          desc="The best quality Oil Filter"
+          price="Kshs. 8,000"
+        />
+        <FeaturedProducts
+          img={prodimage4}
+          rating="3.9 (17) . Kenya"
+          desc="The best quality Breake Pad & Shoe"
+          price="Kshs. 3,400"
+        />
+        <FeaturedProducts
+          img={prodimage5}
+          rating="4.8 (9) . Kenya"
+          desc="The best quality Condenser"
+          price="Kshs. 8,000"
+        />
+        <FeaturedProducts
+          img={prodimage6}
+          rating="4.2 (10) . Kenya"
+          desc="The best quality Radiator"
+          price="Kshs. 7,000"
+        />
+        <FeaturedProducts
+          img={prodimage7}
+          rating="5.0 (14) . Kenya"
+          desc="The best quality Gasket"
+          price="Kshs. 1,300"
+        />
+        <FeaturedProducts
+          img={prodimage8}
+          rating="4.4 (13) . Kenya"
+          desc="The best quality Shock Absober"
+          price="Kshs. 2,800"
+        />
+        <FeaturedProducts
+          img={prodimage9}
+          rating="4.7 (5) . Kenya"
+          desc="The best quality Fan & Motor"
+          price="Kshs. 5,500"
+        />
       </div>
     </div>
   );
