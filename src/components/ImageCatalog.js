@@ -6,6 +6,8 @@ export default function ImageCatalog() {
   const Products = FeaturedProductsData.map((product) => {
     return (
       <FeaturedProducts
+        key={product.id}
+        stock={product.stock}
         img={product.img}
         rating={product.rating}
         desc={product.desc}

@@ -254,3 +254,13 @@ footer {
   width: 10px;
   height: 10px;
 }
+
+.product-banner {
+  margin: 5px;
+  position: absolute;
+  background-color: aliceblue;
+  border-radius: 4px;
+  color: black;
+  font-size: 14px;
+  padding: 2px;
+}
