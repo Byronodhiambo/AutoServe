@@ -4,16 +4,7 @@ import FeaturedProductsData from "../components/FeaturedProductsData";
 
 export default function ImageCatalog() {
   const Products = FeaturedProductsData.map((product) => {
-    return (
-      <FeaturedProducts
-        key={product.id}
-        stock={product.stock}
-        img={product.img}
-        rating={product.rating}
-        desc={product.desc}
-        price={product.price}
-      />
-    );
+    return <FeaturedProducts key={product.id} product={product} />;
   });
   return (
     <div className="service">
