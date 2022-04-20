@@ -114,3 +114,18 @@ export default function ImageCatalog() {
     </div>
   );
 }
+
+// const nums = [1, 2, 3, 4, 5];
+// const squared = nums.map((num) => num * num);
+// console.log(squared);
+
+// const names = ["james", "kimani"];
+// const capitalised = names.map(
+//   (name) => name.charAt(0).toLocaleUpperCase() + name.slice(1)
+// );
+// console.log(capitalised);
+
+// const array = ["red", "yellow", "blue"];
+
+// const h3elements = array.map((element) => `<h3>element</h3>`);
+// console.log(h3elements);

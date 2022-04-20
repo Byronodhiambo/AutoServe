@@ -48,6 +48,7 @@ body {
 }
 .nav {
   display: flex;
+  width: 100%;
   align-items: center;
   background-color: rgb(26, 33, 36);
   color: aliceblue;
@@ -78,9 +79,11 @@ body {
   /* background: rgba(25, 58, 36, 0.8) url("../src/images/oil-filter.jpg"); */
   width: 100%;
 }
+.main-container {
+  margin: 3%;
+}
 
 .container {
-  margin: 3%;
   background-image: url(./images/AutoServecopy.png);
   background-repeat: no-repeat;
   background-position-x: right;
@@ -162,7 +165,7 @@ footer {
 }
 
 .service {
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 .image-container {
@@ -214,7 +217,7 @@ footer {
 
 .product-card {
   width: 150px;
-  padding: 0px 15px 10px 15px;
+  padding: 0px 10px 0px 10px;
 }
 
 .prod-image {

@@ -13,18 +13,27 @@ function Page() {
   return (
     <>
       <Header />
-      <MainContent />
-      <div className="main-container"></div>
-      <div className="employees">
-        <BussinesCard
-          img={fredrick}
-          name="Fredrick Maina"
-          designation="Accountant"
-        />
-        <BussinesCard img={girish} name="Girish Karnad" designation="C E O" />
-        <BussinesCard img={mitesh} name="Mitesh Patel" designation="Manager" />
+      <div className="main-container">
+        <MainContent />
+
+        <br></br>
+        <h1>Our employees</h1>
+        <div className="employees">
+          <BussinesCard
+            img={fredrick}
+            name="Fredrick Maina"
+            designation="Accountant"
+          />
+          <BussinesCard img={girish} name="Girish Karnad" designation="C E O" />
+          <BussinesCard
+            img={mitesh}
+            name="Mitesh Patel"
+            designation="Manager"
+          />
+        </div>
+        <ImageCatalog />
       </div>
-      <ImageCatalog />
+
       <Footer />
     </>
   );
