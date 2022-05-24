@@ -2,7 +2,7 @@ import React from "react";
 
 import star from "../images/star.png";
 
-export default function FeaturedProducts(props) {
+export default function ProductsList(props) {
   return (
     <div className="product-card">
       {props.product.stock === 0 && (
