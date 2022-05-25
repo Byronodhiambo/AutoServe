@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import React from "react";
-import "./App.css";
+// import "./App.css";
 import "bulma/css/bulma.css";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";

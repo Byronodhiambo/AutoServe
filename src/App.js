@@ -26,6 +26,7 @@
 // export default App;
 
 import React, { Component } from "react";
+import logo from "./images/AutoServe.png";
 import {
   Switch,
   Route,
@@ -38,6 +39,7 @@ import AddProduct from "./components/AddProduct";
 import Cart from "./components/Cart";
 import Login from "./components/Login";
 import ProductList from "./components/ProductList";
+import Contacts from "./components/Contacts";
 
 import Context from "./Context";
 
@@ -68,12 +70,15 @@ export default class App extends Component {
         <Router ref={this.routerRef}>
           <div className="App">
             <nav
-              className="navbar container"
+              className="navbar container is-fixed-top is-transparent"
               role="navigation"
               aria-label="main navigation"
             >
-              <div className="navbar-brand">
-                <b className="navbar-item is-size-4 ">ecommerce</b>
+              <div className="navbar-brand ">
+                <img class="image " src={logo} width="112" height="28" />
+                <h1>
+                  {/* <b className="navbar-item is-size-4 ">AutoServe</b> */}
+                </h1>
                 <label
                   role="button"
                   class="navbar-burger burger"
@@ -95,32 +100,45 @@ export default class App extends Component {
                   this.state.showMenu ? "is-active" : ""
                 }`}
               >
-                <Link to="/products" className="navbar-item">
-                  Products
-                </Link>
-                {this.state.user && this.state.user.accessLevel < 1 && (
-                  <Link to="/add-product" className="navbar-item">
-                    Add Product
+                <div class="navbar-start">
+                  <Link to="/" className="navbar-item">
+                    Home
                   </Link>
-                )}
-                <Link to="/cart" className="navbar-item">
-                  Cart
-                  <span
-                    className="tag is-primary"
-                    style={{ marginLeft: "5px" }}
-                  >
-                    {Object.keys(this.state.cart).length}
-                  </span>
-                </Link>
-                {!this.state.user ? (
-                  <Link to="/login" className="navbar-item">
-                    Login
+                  <Link to="/shop" className="navbar-item">
+                    Shop
                   </Link>
-                ) : (
-                  <Link to="/" onClick={this.logout} className="navbar-item">
-                    Logout
+                  {this.state.user && this.state.user.accessLevel < 1 && (
+                    <Link to="/add-product" className="navbar-item">
+                      Add Product
+                    </Link>
+                  )}
+
+                  <Link to="/contacts" className="navbar-item">
+                    Contacts
                   </Link>
-                )}
+                </div>
+
+                <div class="navbar-end">
+                  <Link to="/cart" className="navbar-item">
+                    My Cart
+                    <span
+                      className="tag is-primary"
+                      style={{ marginLeft: "5px" }}
+                    >
+                      {Object.keys(this.state.cart).length}
+                    </span>
+                  </Link>
+
+                  {!this.state.user ? (
+                    <Link to="/login" className="navbar-item">
+                      Login
+                    </Link>
+                  ) : (
+                    <Link to="/" onClick={this.logout} className="navbar-item">
+                      Logout
+                    </Link>
+                  )}
+                </div>
               </div>
             </nav>
             <Routes>
@@ -128,7 +146,8 @@ export default class App extends Component {
               <Route exact path="/login" component={Login} />
               <Route exact path="/cart" component={Cart} />
               <Route exact path="/add-product" component={AddProduct} />
-              <Route exact path="/products" component={ProductList} />
+              <Route exact path="/shop" component={ProductList} />
+              <Route exact path="/contacts" component={Contacts} />
             </Routes>
           </div>
         </Router>
