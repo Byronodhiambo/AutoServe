@@ -1,5 +1,5 @@
 import React from "react";
-import FeaturedProducts from "../components/ProductList";
+import FeaturedProducts from "./ProductList";
 import FeaturedProductsData from "../components/FeaturedProductsData";
 
 export default function ImageCatalog() {
