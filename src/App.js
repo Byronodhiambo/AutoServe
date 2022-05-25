@@ -40,6 +40,8 @@ import Cart from "./components/Cart";
 import Login from "./components/Login";
 import ProductList from "./components/ProductList";
 import Contacts from "./components/Contacts";
+import axios from "axios";
+import jwt_decode from "jwt-decode";
 
 import Context from "./Context";
 
