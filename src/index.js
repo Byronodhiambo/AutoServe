@@ -11,6 +11,7 @@ import fredrick from "../src/images/fredrick.jpeg";
 import girish from "../src/images/Girish.jpg";
 import mitesh from "../src/images/mitesh.jpg";
 import App from "./App";
+
 function Page() {
   return (
     <>

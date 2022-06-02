@@ -27,7 +27,7 @@ const ProductList = (props) => {
 
   return (
     <>
-      <div className="hero is-primary">
+      {/* <div className="hero is-primary">
         <div className="hero-body container">
           <h4 className="title">Our Products</h4>
         </div>
@@ -51,7 +51,9 @@ const ProductList = (props) => {
             </div>
           )}
         </div>
-      </div>
+      </div> */}
+
+      <h1>product list</h1>
     </>
   );
 };

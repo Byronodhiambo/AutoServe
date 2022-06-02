@@ -38,11 +38,7 @@ import {
 import AddProduct from "./components/AddProduct";
 import Cart from "./components/Cart";
 import Login from "./components/Login";
-import Contact from "./components/Contact";
 import ProductList from "./components/ProductList";
-
-import axios from "axios";
-import jwt_decode from "jwt-decode";
 
 import Context from "./Context";
 
@@ -55,13 +51,6 @@ export default class App extends Component {
       products: [],
     };
     this.routerRef = React.createRef();
-  }
-
-  async componentDidMount() {
-    let user = localStorage.getItem("user");
-    const products = await axios.get("http://localhost:3001/products");
-    user = null; //user ? JSON.parse(user) : null;
-    this.setState({ user, products: products.data });
   }
 
   render() {
@@ -87,7 +76,7 @@ export default class App extends Component {
               <div className="navbar-brand ">
                 <img class="image " src={logo} width="112" height="28" />
                 <h1>
-                  <b className="navbar-item is-size-4 ">AutoServe</b>
+                  {/* <b className="navbar-item is-size-4 ">AutoServe</b> */}
                 </h1>
                 <label
                   role="button"
@@ -130,7 +119,7 @@ export default class App extends Component {
 
                 <div class="navbar-end">
                   <Link to="/cart" className="navbar-item">
-                    My Cart
+                    Cart
                     <span
                       className="tag is-primary"
                       style={{ marginLeft: "5px" }}
@@ -152,13 +141,11 @@ export default class App extends Component {
               </div>
             </nav>
             <Routes>
-              {/* <Route exact path="/" component={ProductList} /> */}
-              <Route exact path="/" component={Product} />
+              <Route exact path="/" component={ProductList} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/cart" component={Cart} />
               <Route exact path="/add-product" component={AddProduct} />
-              <Route exact path="/shop" component={Product} />
-              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/shop" component={ProductList} />
             </Routes>
           </div>
         </Router>
