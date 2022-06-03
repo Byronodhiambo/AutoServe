@@ -6,7 +6,6 @@ from django.contrib.auth.models import Group
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['id', 'name', 'price', 'desc', 'price', 'stock']
     list_filter = ['category']
-    change_list_template
 
 admin.site.site_header = "Product admin"
 
