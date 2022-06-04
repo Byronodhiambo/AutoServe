@@ -1,9 +1,8 @@
 from django.shortcuts import render
-
-from AutoServe.backend.products.serializers import CategorySerializer, ProductSerializer
 from .models import Products, Category
-from .serializersProductSerializer,  import ProductSerializer, CategorySerializer
-from rest_framework.viewsets import ReadOnlyModelViewset
+from .serializers  import ProductSerializer, CategorySerializer
+# from rest_framework.viewsets import ReadOnlyModelViewset
+from rest_framework import ReadOnlyModelViewset
 
 # Create your views here.
 
