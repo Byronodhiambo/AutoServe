@@ -29,6 +29,6 @@ urlpatterns = [
     # path('products', include('products.urls')),
 ]
 
-
+# To make Django development server serve media
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

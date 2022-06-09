@@ -22,6 +22,7 @@ class Products(models.Model):
     desc = models.TextField()
     # long_desc = models.CharField(max_length=400)
     category = models.ManyToManyField(Category, related_name='products', related_query_name='products')
+    # relation between Product and Image
     image = models.ManyToManyField('products.Image', related_name= 'products')
     stock = models.IntegerField()
     created = models.DateField(auto_now_add=True)
