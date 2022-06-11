@@ -18,17 +18,21 @@ from django.urls import path, include, re_path
 from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework.routers import DefaultRouter
-from products.views import Products
+from products.views import Products, ImageViewSet
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
 
 router = DefaultRouter()
 router.register(r'product', Products, basename='Products')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^', include(router.urls))
-    # path('products', include('products.urls')),
-]
-
+    re_path(r'^', include(router.urls)),
+    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('image/',  ima),
 # To make Django development server serve media
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
