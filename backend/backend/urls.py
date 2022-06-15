@@ -32,7 +32,9 @@ urlpatterns = [
     re_path(r'^', include(router.urls)),
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('image/',  ima),
+    path('image/',  ImageViewSet.as_view(), name='image'),
+
+]
 # To make Django development server serve media
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
