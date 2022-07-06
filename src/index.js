@@ -11,12 +11,15 @@ import fredrick from "../src/images/fredrick.jpeg";
 import girish from "../src/images/Girish.jpg";
 import mitesh from "../src/images/mitesh.jpg";
 import App from "./App";
+import ProductList from "./components/ProductList";
+import Contact from "./components/Contact";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function Page() {
   return (
-    <>
-      <App />
-      {/* <Header />
+    <BrowserRouter>
+      <Header />
       <MainContent />
       <div className="main-container">
         <h1>Sales Team</h1>
@@ -32,8 +35,13 @@ function Page() {
         <ImageCatalog />
       </div>
 
-      <Footer /> */}
-    </>
+      <Footer />
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/Products" element={<ImageCatalog />} />
+        <Route path="/Contacts" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
