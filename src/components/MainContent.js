@@ -1,16 +1,12 @@
 import React from "react";
 import Cover1 from "../images/cover1.jpg";
-import bulmaCarousel from "./bulma/dist/js/bulma-carousel.min.js";
+// import bulmaCarousel from "bulma-carousel/dist/js/bulma-carousel.min.js";
 
 function MainContent() {
-  var carousels = bulmaCarousel.attach(".carousel", {
-    slidesToScroll: 1,
-    slidesToShow: 3,
-  });
   return (
     <div className="section">
-      <div className="container is-clipped">
-        <div id="slider">
+      <div className="container is-clipped carousel">
+        <div id="slider" className="carousel">
           <div className="card">
             <div className="card-image">
               <figure className="image is16by9 is-covered">
