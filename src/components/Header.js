@@ -4,21 +4,64 @@ import { Link, Outlet } from "react-router-dom";
 
 export default function Header() {
   return (
-    <nav className="nav">
-      <img className="logo" src={logo} width="60px" />
-      <h3 className="companyName">AutoServe</h3>
+    <nav class="nav navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img className="logo" src={logo} w />
+          {/* <h3 className="companyName">AutoServe</h3> */}
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-      <ul className="nav-items">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/Products">Products</Link>
-        </li>
-        <li>
-          <Link to="/Contacts">Contacts</Link>
-        </li>
-      </ul>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            <Link to="/" class="navbar-item">
+              Home
+            </Link>
+          </a>
+          <a class="navbar-item">
+            <Link to="/Products" class="navbar-item">
+              Products
+            </Link>
+          </a>
+          <a class="navbar-item">
+            <Link to="/Contacts" class="navbar-item">
+              Contacts
+            </Link>
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>
+                  <Link to="/Contacts" class="navbar-item">
+                    Cart
+                  </Link>
+                </strong>
+              </a>
+              <a class="button is-light">
+                <Link to="/Contacts" class="navbar-item">
+                  My Account
+                </Link>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Outlet />
     </nav>
   );
