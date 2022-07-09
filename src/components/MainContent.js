@@ -1,9 +1,40 @@
 import React from "react";
+import Cover1 from "../images/cover1.jpg";
+import bulmaCarousel from "./bulma/dist/js/bulma-carousel.min.js";
 
 function MainContent() {
+  var carousels = bulmaCarousel.attach(".carousel", {
+    slidesToScroll: 1,
+    slidesToShow: 3,
+  });
   return (
-    <div className="main-content-container">
-      <div className="container">
+    <div className="section">
+      <div className="container is-clipped">
+        <div id="slider">
+          <div className="card">
+            <div className="card-image">
+              <figure className="image is16by9 is-covered">
+                <img src={Cover1} />
+              </figure>
+            </div>
+            <div className="card-content">
+              <div className="item-title">hello</div>
+              <div className="item-description">just saying hi</div>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-image">
+              <figure className="image is16by9 is-covered">
+                <img src={Cover1} />
+              </figure>
+            </div>
+            <div className="card-content">
+              <div className="item-title">hello</div>
+              <div className="item-description">just saying hi</div>
+            </div>
+          </div>
+        </div>
         <h1>AUTO SERVE & HARDWARE SUPPLIES LTD </h1>
         <ul>
           <li>Your best spare partner</li>
