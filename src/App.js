@@ -17,7 +17,8 @@ function App() {
     <div>
       <Header />
       <MainContent />
-      <div className="main-container">
+
+      <div className="main-container section">
         <h1>Sales Team</h1>
         <div className="employees">
           <BussinesCard
