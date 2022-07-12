@@ -1,7 +1,6 @@
 import React from "react";
 import Cover1 from "../images/cover1.jpg";
 import bulmaCarousel from "bulma-carousel";
-// import bulmaCarousel from "bulma-carousel/dist/js/bulma-carousel.min.js";
 
 function MainContent() {
   var carousels = bulmaCarousel.attach(".carousel");
@@ -20,41 +19,63 @@ function MainContent() {
     });
   }
   return (
-    <div className="section">
-      <div className="container is-clipped carousel">
-        <div id="carousel" className="carousel" data-slides-to-scroll="2">
-          <div className="item-1">
-            {/* <div className="card-image"> */}
+    <div>
+      <div
+        id="carousel"
+        className="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div className="carousel-item active">
             <figure className="image is16by9 is-covered">
               <img src={Cover1} />
             </figure>
-            {/* </div> */}
-            <div className="card-content">
-              <div className="item-title">hello</div>
-              <div className="item-description">just saying hi</div>
+
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Welcome to Autoserve</h5>
+              <p>Your best spare partner</p>
             </div>
           </div>
 
-          <div className="item-2">
-            {/* <div className="card-image"> */}
-            <figure className="image is16by9 is-covered">
-              <img src={Cover1} />
-            </figure>
-            {/* </div> */}
-            <div className="card-content">
-              <div className="item-title">hello</div>
-              <div className="item-description">just saying hi</div>
+          <div class="carousel-item">
+            <img src={Cover1} class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Genuine parts</h5>
+              <p>We sell all spare brands</p>
             </div>
           </div>
         </div>
-        <h1>AUTO SERVE & HARDWARE SUPPLIES LTD </h1>
-        <ul>
-          <li>Your best spare partner</li>
-          <li>We sell all spare brands</li>
-          <li>We are located alon Dar es salaam road</li>
-          <li>Opening hours are 9 a.m - 5 p.m</li>
-        </ul>
       </div>
+      <h1>AUTO SERVE & HARDWARE SUPPLIES LTD </h1>
+      <ul>
+        <li>Your best spare partner</li>
+        <li>We sell all spare brands</li>
+        <li>We are located alon Dar es salaam road</li>
+        <li>Opening hours are 9 a.m - 5 p.m</li>
+      </ul>
     </div>
   );
 }

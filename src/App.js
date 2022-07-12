@@ -1,8 +1,7 @@
 import "./App.css";
 import ReactDOM from "react-dom";
 import React from "react";
-// import "./App.css";
-import "bulma/css/bulma.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";

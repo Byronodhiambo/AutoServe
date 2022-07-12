@@ -1,7 +1,10 @@
 import ReactDOM from "react-dom";
 import React from "react";
-// import "./App.css";
+
 import "bulma/css/bulma.css";
+import "bulma/css/bulma.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import ImageCatalog from "./components/ImageCatalog";
 import App from "./App";
 import Contact from "./components/Contact";
