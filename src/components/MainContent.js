@@ -1,5 +1,7 @@
 import React from "react";
-import Cover1 from "../images/cover1.jpg";
+import Cover3 from "../images/cover3.jpg";
+import Cover4 from "../images/cover4.jpg";
+import Cover2 from "../images/cover2.jpg";
 import bulmaCarousel from "bulma-carousel";
 
 function MainContent() {
@@ -20,11 +22,7 @@ function MainContent() {
   }
   return (
     <div>
-      <div
-        id="carousel"
-        className="carousel carousel-dark slide"
-        data-bs-ride="carousel"
-      >
+      <div id="carousel" className="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -48,34 +46,34 @@ function MainContent() {
           ></button>
         </div>
 
-        <div class="carousel-inner">
+        <div class="carousel-inner bg-info">
           <div className="carousel-item active">
-            <figure className="image is16by9 is-covered">
-              <img src={Cover1} />
-            </figure>
+            <img src={Cover4} class="d-block w-100 h-100" alt="AUTO SERVE" />
 
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Welcome to Autoserve</h5>
-              <p>Your best spare partner</p>
+            <div class="carousel-caption d-none d-md-block align-items-center justify-content-center min-vh-100">
+              <h1 className="display-4">AUTO SERVE & HARDWARE SUPPLIES LTD </h1>
+
+              <h3>Your best spare partner</h3>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src={Cover1} class="d-block w-100" alt="..." />
+            <img src={Cover3} class="d-block w-100 h-100" alt="AUTO SERVE" />
+            <div class="carousel-caption d-none d-md-block align-items-center justify-content-center min-vh-100">
+              <h1 className="display-4">Genuine parts</h1>
+              <h3>We sell all spare brands</h3>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src={Cover2} class="d-block w-100 h-100" alt="AUTO SERVE" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Genuine parts</h5>
-              <p>We sell all spare brands</p>
+              <h1 className="display-4">Our Shop</h1>
+              <h3>We are located alon Dar es salaam road</h3>
             </div>
           </div>
         </div>
       </div>
-      <h1>AUTO SERVE & HARDWARE SUPPLIES LTD </h1>
-      <ul>
-        <li>Your best spare partner</li>
-        <li>We sell all spare brands</li>
-        <li>We are located alon Dar es salaam road</li>
-        <li>Opening hours are 9 a.m - 5 p.m</li>
-      </ul>
     </div>
   );
 }

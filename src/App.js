@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import ImageCatalog from "./components/ImageCatalog";
 import BussinesCard from "./components/BussinesCards";
 import fredrick from "../src/images/fredrick.jpeg";
-import girish from "../src/images/Girish.jnpm install react-bootstrap bootstrappg";
+import girish from "../src/images/Girish.jpg";
 import mitesh from "../src/images/mitesh.jpg";
 
 function App() {

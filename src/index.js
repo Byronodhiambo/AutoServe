@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom";
 import React from "react";
-
 import "bulma/css/bulma.css";
 import "bulma/css/bulma.css";
 import "bootstrap/dist/css/bootstrap.min.css";
