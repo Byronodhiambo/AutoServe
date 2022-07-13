@@ -4,7 +4,7 @@ import Cover4 from "../images/cover4.jpg";
 import Cover2 from "../images/cover2.jpg";
 import bulmaCarousel from "bulma-carousel";
 
-function MainContent() {
+function Carousel() {
   var carousels = bulmaCarousel.attach(".carousel");
 
   for (var i = 0; i < carousels.length; i++) {
@@ -47,25 +47,25 @@ function MainContent() {
         </div>
 
         <div class="carousel-inner bg-info">
-          <div className="carousel-item active">
+          <div className="carousel-item active" data-bs-interval="5000">
             <img src={Cover4} class="d-block w-100 h-100" alt="AUTO SERVE" />
 
-            <div class="carousel-caption d-none d-md-block align-items-center justify-content-center min-vh-100">
+            <div class="carousel-caption d-none d-md-block align-items-center justify-content-center ">
               <h1 className="display-4">AUTO SERVE & HARDWARE SUPPLIES LTD </h1>
 
               <h3>Your best spare partner</h3>
             </div>
           </div>
 
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="5000">
             <img src={Cover3} class="d-block w-100 h-100" alt="AUTO SERVE" />
-            <div class="carousel-caption d-none d-md-block align-items-center justify-content-center min-vh-100">
+            <div class="carousel-caption d-none d-md-block align-items-center justify-content-center">
               <h1 className="display-4">Genuine parts</h1>
               <h3>We sell all spare brands</h3>
             </div>
           </div>
 
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="5000">
             <img src={Cover2} class="d-block w-100 h-100" alt="AUTO SERVE" />
             <div class="carousel-caption d-none d-md-block">
               <h1 className="display-4">Our Shop</h1>
@@ -78,4 +78,4 @@ function MainContent() {
   );
 }
 
-export default MainContent;
+export default Carousel;

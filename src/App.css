@@ -39,8 +39,8 @@
 body {
   margin: 0%;
   padding: 0%;
-  background-color: rgb(40, 46, 48);
-  color: #ddd;
+  /* background-color: rgb(40, 46, 48); */
+  /* color: #ddd; */
   font-family: Inter, sans-serif;
 }
 .main-container {
@@ -51,33 +51,22 @@ body {
   top: 0;
   width: 100%;
   padding: 10px 20px 10px 20px;
-  background-color: rgb(26, 33, 36);
+  /* background-color: rgb(26, 33, 36); */
 }
 
-.cover-image {
-  /* background: rgba(25, 58, 36, 0.8) url("../src/images/oil-filter.jpg"); */
-  width: 100%;
-}
 .main-container {
   margin: 3%;
 }
-.main-content-container {
-  /* background: linear-gradient(to top, #000000ba, #000000cc),
-    url("./images/cover1.jpg");
-  height: 700px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 150px 20px 0px 150px;
-  font-size: 20px; */
+
+.carousel-item {
+  height: 800px;
 }
 
-.container {
-  background-image: url(./images/AutoServecopy.png);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: 20%;
-  height: 100%;
+.carousel-item img {
+  height: 100% !important;
+  object-fit: cover;
 }
+
 .main-content-container li {
   margin: 2%;
   font-weight: bolder;
@@ -92,7 +81,7 @@ body {
 .card {
   border-radius: 20px;
   width: 300px;
-  background-color: rgb(26, 33, 36);
+  /* background-color: rgb(26, 33, 36); */
 }
 .employees {
   display: flex;
@@ -143,7 +132,7 @@ body {
 .socialHandles {
   text-align: center;
   font-size: 15px;
-  background-color: black;
+  /* background-color: black; */
   border-radius: 0px 0px 25px 25px;
 }
 .socialHandles .fa {
