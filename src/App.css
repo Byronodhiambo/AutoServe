@@ -67,6 +67,10 @@ body {
   object-fit: cover;
 }
 
+.d-flex div {
+  margin: 10px;
+}
+
 .main-content-container li {
   margin: 2%;
   font-weight: bolder;
@@ -142,10 +146,6 @@ body {
 footer {
   margin: 10%;
   text-align: center;
-}
-
-.service {
-  /* padding: 50px; */
 }
 
 .image-container {
