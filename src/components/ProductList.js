@@ -1,7 +1,5 @@
 import React from "react";
-import Header from "./Header";
 import star from "../images/star.png";
-import Footer from "./Footer";
 
 export default function ProductsList(props) {
   return (
