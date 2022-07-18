@@ -7,6 +7,7 @@ import "./App.css";
 import ImageCatalog from "./components/ImageCatalog";
 import App from "./App";
 import Contact from "./components/Contact";
+import NoMatch from "./components/NoMatch";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -17,6 +18,7 @@ function Page() {
         <Route path="/" element={<App />}>
           <Route path="/Shop" element={<ImageCatalog />} />
           <Route path="/Contacts" element={<Contact />} />
+          <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
         <br></br>
-        <p>© 2022 Auto Serve Ltd. All rights reserved.</p>
+        <p>© Auto Serve Ltd. All rights reserved. 2022</p>
       </div>
     </footer>
   );
