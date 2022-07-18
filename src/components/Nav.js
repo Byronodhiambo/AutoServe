@@ -31,8 +31,8 @@ export default function Header() {
             </Link>
           </a>
           <a class="navbar-item">
-            <Link to="/Products" class="navbar-item">
-              Products
+            <Link to="/Shop" class="navbar-item">
+              Shop
             </Link>
           </a>
           <a class="navbar-item">

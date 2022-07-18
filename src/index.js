@@ -15,7 +15,7 @@ function Page() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/Products" element={<ImageCatalog />} />
+        <Route path="/Shop" element={<ImageCatalog />} />
         <Route path="/Contacts" element={<Contact />} />
       </Routes>
     </BrowserRouter>

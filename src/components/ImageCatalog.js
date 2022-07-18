@@ -1,11 +1,6 @@
 import React from "react";
-import FeaturedProducts from "./ProductList";
-import FeaturedProductsData from "../components/FeaturedProductsData";
 
 export default function ImageCatalog() {
-  const Products = FeaturedProductsData.map((product) => {
-    return <FeaturedProducts key={product.id} product={product} />;
-  });
   return (
     <div className="service">
       <h1>Products</h1>
@@ -48,9 +43,6 @@ export default function ImageCatalog() {
           oil, brake pad, coolant, tire, etc.
         </p>
       </div>
-
-      <h1>Featured Parts</h1>
-      <div className="prod-catalog">{Products}</div>
     </div>
   );
 }
