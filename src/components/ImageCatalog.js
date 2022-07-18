@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ImageCatalog() {
   return (
-    <div className="service">
+    <div className="container">
       <h1>Products</h1>
       <div className="image-container">
         <div className="image1"></div>
