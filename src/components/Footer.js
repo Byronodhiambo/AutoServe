@@ -35,19 +35,19 @@ export default function Footer() {
                 Explore
               </h4>
               <p class="bd-footer-link">
-                <a href="https://">
+                <a href="#">
                   <span class="icon-text">
                     <span>Home</span>
                   </span>
                 </a>
                 <br />
-                <a href="https://">
+                <a href="#">
                   <span class="icon-text">
                     <span>Shop</span>
                   </span>
                 </a>
                 <br />
-                <a href="https://">
+                <a href="#">
                   <span class="icon-text">
                     <span>Contacts</span>
                   </span>
@@ -63,19 +63,19 @@ export default function Footer() {
                 Contact us
               </h4>
               <p class="bd-footer-link">
-                <a href="https://">
+                <a href="#">
                   <span class="icon-text">
                     <span>Email</span>
                   </span>
                 </a>
                 <br />
-                <a href="https://">
+                <a href="#">
                   <span class="icon-text">
                     <span>Call Us</span>
                   </span>
                 </a>
                 <br />
-                <a href="https://">
+                <a href="#">
                   <span class="icon-text">
                     <span>Chat with us!</span>
                   </span>

@@ -14,9 +14,10 @@ function Page() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/Shop" element={<ImageCatalog />} />
-        <Route path="/Contacts" element={<Contact />} />
+        <Route path="/" element={<App />}>
+          <Route path="/Shop" element={<ImageCatalog />} />
+          <Route path="/Contacts" element={<Contact />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
