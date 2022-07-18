@@ -61,8 +61,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-
-      <Outlet />
     </nav>
   );
 }
