@@ -10,6 +10,10 @@ export default function FeaturedProducts() {
     <div className="container">
       <h1 class="title">Featured Parts</h1>
       <div className="prod-catalog">{Items}</div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
     </div>
   );
 }
